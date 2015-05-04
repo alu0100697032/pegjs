@@ -1,4 +1,5 @@
 var gulp    = require('gulp');
+var shell = require('gulp-shell');
 
 gulp.task('test', function () {
  
@@ -12,3 +13,8 @@ gulp.task('test', function () {
     }));
 });
 **/
+
+gulp.task('open',function(){
+  gulp.src([])
+    .pipe(shell('view https://github.com/crguezl/clase-express-coffee'))
+});
